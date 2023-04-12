@@ -26,7 +26,12 @@ addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
 function addTwoNumbers( firstNum , secondNum){
-  return firstNum + secondNum;
+  if (typeof firstNum !== "number" || typeof secondNum !== "number"){
+    alert( " Enter valid Input");
+  }else {
+    return firstNum + secondNum;
+  }
+ 
 }
 getFullName( 21, 40);
 /*
@@ -41,7 +46,22 @@ calc(20, 10, 'sub'); // 10
 calc(20, 10, 'mul'); // 200
 */
 function calc(numA , numB , operation){
-  return 
+  if (typeof numA !== "number" || typeof numB !== "number"){
+    alert( " Enter valid Input");
+  }else {
+    switch(operation){
+      case "add":
+        return numA + numB;
+        case "mul":
+        return numA * numB;
+        case "div":
+        return numA / numB;
+        case "sub":
+        return numA - numB;
+        default :
+        alert(`Enter a valid operation`)
+    }
+  }
 }
 
 /*
