@@ -40,25 +40,25 @@ Write a function named `addOne` that accepts a number, adds one to the given val
 Do the following with above problem.
 */
 // - Write a Function Declaration
-function add(addOne){
-  return addOne + 1;
+function addOne(){
+  return n + 1;
 }
 
 // - Write a Function Expression
-let add =function (addOne){
-  return addOne + 1;
+let addOne =function (n){
+  return n + 1;
 }
 // - Write an Arrow Function without curly brackets(if possible)
-let add =(addOne) => addOne - 1;
+let addOne =(n) => n + 1;
 
 // - Write an Arrow Function with curly brackets
-let add =(addOne) => {
-  return addOne + 1;
+let addOne =(n) => {
+  return n + 1;
 }
 // - Execute the function
-add(20);
+addOne(20);
 // - Execute the function and store the return value in a variable.
-let addValue = add(21);
+let addValue = addOne(21);
 // - What is the typeof returnValue
 //typeof return value is "number"
 
@@ -71,25 +71,25 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-function sub(numOne){
-  return numOne - 1;
+function subtractOne(n){
+  return n - 1;
 }
 
 // - Write a Function Expression
-let sub =function (numOne){
-  return numOne - 1;
+let subtractOne =function (n){
+  return n - 1;
 }
 // - Write an Arrow Function without curly brackets(if possible)
-let sub =(numOne) => numOne - 1;
+let subtractOne =(n) => n - 1;
 
 // - Write an Arrow Function with curly brackets
-let sub =(numOne) => {
-  return numOne - 1;
+let subtractOne =(n) => {
+  return n - 1;
 }
 // - Execute the function
 sub(20);
 // - Execute the function and store the return value in a variable.
-let subValue = sub(21);
+let subValue = subtractOne(21);
 // - What is the typeof returnValue
 //typeof return value is "number"
 /* 3. Add two numbers
@@ -210,17 +210,17 @@ function oddOrEven(number){
   } else{
     return `Number is odd`;
   }
-}
+};
 // - Write an anonymous Function Expression
-const evenOROdd = function (number){
+let  oddOrEven= function (number){
   if (number % 2 == 0) {
     return `Number is odd`;
   } else{
     return `Number is odd`;
-  };
-}
+  }
+};
 // - Write an named Function Expression
- function oddOREven(number){
+let oddOrEven=  function  evenOdd(number){
   if (number % 2 == 0) {
     return `Number is odd`;
   } else {
@@ -228,9 +228,9 @@ const evenOROdd = function (number){
   }
 }
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
-
+let oddOrEven = (number) => number % 2 == 0 ? `Number is odd`: `Number is odd`;
 // - Write an Arrow Function with curly brackets
-const oddOREven = (number) => {
+let oddOREven = (number) => {
   if (number % 2 == 0) {
     return `Number is odd`;
   } else {
@@ -238,7 +238,11 @@ const oddOREven = (number) => {
   }
 }
 // - Execute the function
+oddOREven();
+
 
 // - Execute the function and store the return value in a variable
+let evenOdd = oddOREven();
 
 // - What is the typeof returnValue
+//"number"
