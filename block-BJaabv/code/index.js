@@ -9,7 +9,7 @@
 */
 
 function calculateDogAge() {
-  // Your code goes here
+  
 }
 
 /*
@@ -92,8 +92,8 @@ function sumOfN() {
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
-  // Your code goes here
+function min(x , y) {
+  
 }
 
 min(0, 10);
